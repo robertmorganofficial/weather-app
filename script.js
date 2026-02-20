@@ -11,6 +11,13 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=London&aqi=no`
 */
 
 searchButton.addEventListener("click", fetchData);
+searchInput.addEventListener("keydown", (event) => {
+    if(event.key === "Enter"){
+        fetchData();
+    }
+
+})
+
 
 async function fetchData() {
    

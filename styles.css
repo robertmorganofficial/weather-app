@@ -127,18 +127,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     z-index: 2;
-    margin-top: -20px;
-    /* Slight offset for perfect optical centering */
+    padding-top: 0;
 }
 
 #weatherImage {
     width: 200px;
     height: 200px;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin: 0;
     filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.2));
     animation: float 6s ease-in-out infinite;
     /* Hide broken image icon when src is empty */
@@ -164,7 +163,7 @@ h1 {
     font-size: 44px;
     font-weight: 300;
     color: #ffffff;
-    margin: 10px 0 0 0;
+    margin: 0;
     letter-spacing: 0.5px;
     text-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }

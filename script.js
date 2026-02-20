@@ -28,12 +28,13 @@ async function fetchData() {
         const weatherIcon = data.current.condition.icon;
         const tempIcon = data.current.temp_f;
         const cityName = data.location.name;
+        const stateName = data.location.region;
 
 
 
         weatherImage.src = weatherIcon;
         weatherTemp.textContent = (`${tempIcon}° F`);
-        city.textContent = cityName;
+        city.textContent = (`${cityName}, ${stateName}`);
     }
     catch(error){
         console.error(error);
